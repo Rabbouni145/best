@@ -1,0 +1,64 @@
+baseURL: https://example.com/blogra/
+canonifyURLs: yes
+pluralizeListTitles: no
+summaryLength: 25
+theme: BlogRa
+languageCode: en-us
+title: BlogRa
+disqusShortname: ''
+params:
+  adsense: adsense-key
+  contactEmail: your-email@domain.com
+  description: The Ultimate Tech Blogging Theme
+  facebook: https://www.facebook.com/DevHacker-2351204168278028
+  footer: ''
+  github: https://github.com/rafed
+  googleAnalytics: ''
+  googleSearch: google-cse-key
+  instagram: ''
+  linkedin: https://www.linkedin.com/in/rafed-m-yasir/
+  math: no
+  mermaid: no
+  pinterest: ''
+  twitter: ''
+  youtube: https://www.youtube.com/channel/UC6uDg4IlPbLh2xNKrqnBczw
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - identifier: blog
+      name: Blog
+      weight: 2
+    - name: Posts
+      parent: blog
+      url: /posts/
+      weight: 1
+    - name: Sections
+      parent: blog
+      url: /sections/
+      weight: 2
+    - name: divider
+      parent: blog
+      weight: 3
+    - name: Tags
+      parent: blog
+      url: /tags/
+      weight: 4
+    - name: About
+      url: /about/
+      weight: 3
+    - name: Contact
+      url: /contact/
+      weight: 4
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: yes
+    renderer:
+      unsafe: yes
+module:
+  hugoVersion:
+    extended: yes
+    min: 0.102.3
